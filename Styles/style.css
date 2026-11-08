@@ -41,6 +41,10 @@ body {
   text-decoration: none;
 }
 
+.nav-link:hover {
+  color: #ff976b;
+}
+
 .header-title {
   margin: 0;
   max-width: 709px;

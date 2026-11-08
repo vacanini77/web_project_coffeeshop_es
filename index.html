@@ -6,6 +6,8 @@
     <title>Triple Espresso</title>
     <link rel="stylesheet" href="./Styles/normalize.css" />
     <link rel="stylesheet" href="./Styles/style.css" />
+    <link rel="stylesheet" href="./Styles/content.css" />
+    <link rel="stylesheet" href="./Styles/footer.css" />
     <link rel="icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -55,7 +57,103 @@
         <p class="info-text">Avenida del Éxito 200, Ciudad Triple Peaks</p>
       </div>
     </header>
-    <main class="content"><section id="reservar"></section></main>
-    <footer class="footer"><section id="contactos"></section></footer>
+    <main class="content">
+      <section class="reservation" id="reservar">
+        <h2 class="reservation__title">Reservar una mesa</h2>
+        <form class="reservation__form">
+          <fieldset class="reservation__fieldset">
+            <label class="reservation__label" for="nombre">Nombre *</label>
+            <input
+              id="nombre"
+              class="reservation__input"
+              type="text"
+              name="nombre"
+              placeholder="Nombre"
+              required
+            />
+            <label class="reservation__label" for="comensales"
+              >Número de comensales *</label
+            >
+            <input
+              id="comensales"
+              class="reservation__input"
+              type="number"
+              name="comensales"
+              placeholder="1-8"
+              min="1"
+              max="8"
+              required
+            />
+            <label class="reservation__label" for="fecha">Fecha y hora *</label>
+            <input
+              id="fecha"
+              class="reservation__input"
+              type="datetime-local"
+              name="fecha"
+              required
+            />
+            <label class="reservation__label" for="email"
+              >Tu correo electrónico *</label
+            >
+            <input
+              id="email"
+              class="reservation__input"
+              type="email"
+              name="email"
+              placeholder="email@email.com"
+              required
+            />
+            <button class="reservation__button" type="submit">
+              Reservar una mesa
+            </button>
+            <label class="reservation__label-checkbox">
+              <input
+                class="reservation__input-checkbox"
+                type="checkbox"
+                name="terminos"
+                required
+              />
+              Acepto los términos de uso
+            </label>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__circle"></div>
+      <section class="footer__content" id="contactos">
+        <img
+          class="footer__logo"
+          src="./Images/Footer/logo_coffeeshop_light.svg"
+          alt="Logo pie de página"
+        />
+        <div class="footer__social">
+          <h3 class="footer__social-title">Redes sociales</h3>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="https://www.facebook.com">
+                <img
+                  class="footer__social-image"
+                  src="./Images/Footer/facebook_white.svg"
+                  alt="Icono de Facebook"
+                />
+                Facebook</a
+              >
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="https://www.instagram.com">
+                <img
+                  class="footer__social-image"
+                  src="./Images/Footer/instagram_white.svg"
+                  alt="Icono de Instagram"
+                />
+                Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <p class="footer__copyright">© 2026 Diego Morales</p>
+    </footer>
   </body>
 </html>
