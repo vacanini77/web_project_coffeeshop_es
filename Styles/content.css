@@ -91,7 +91,7 @@
 
 .reservation__input-checkbox:checked {
   background-color: #2a2a2a;
-  background-image: url(../Images/Content/check.svg);
+  background-image: url(../images/Content/check.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
